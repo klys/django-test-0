@@ -22,5 +22,6 @@ urlpatterns = [
     path('test', views.test),
     path('server-time', views.time),
     path('debug-route', views.debug_test),
-    path('get', views.get)
+    path('get', views.get),
+    path('path/<str:name>/<int:age>', views.path_test)
 ]
